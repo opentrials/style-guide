@@ -1,0 +1,34 @@
+.site-header {
+  background-color: $white;
+  color: $text-colour;
+  position: relative;
+
+  .logo {
+    padding: $base-spacing $base-spacing $base-spacing / 2 $base-spacing;
+    display: block;
+    fill: currentColor;
+    box-sizing: content-box;
+
+    &.small {
+      height: 22px;
+      padding: $base-spacing / 2;
+
+      @include MQ(M) {
+        display: none;
+      }
+    }
+
+    &.full {
+      display: none;
+
+      @include MQ(M) {
+        display: block;
+        height: 71px;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}
