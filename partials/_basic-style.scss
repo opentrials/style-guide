@@ -167,11 +167,15 @@ body > header {
 	right: 5%;
 	height: 100%;
 	width: 80px;
-	background-image: url('../assets/icon-download.svg');
-	background-position: center center;
-	background-repeat: no-repeat;
 	display: none;
-	@include transition(background-color .2s);
+	color: rgba(#fff, 0.8);
+	text-align: center;
+	padding-top: 28px;
+
+	svg {
+		fill: currentColor;
+		width: 40px;
+	}
 
 	span {
 		/* tooltip */
@@ -188,6 +192,8 @@ body > header {
 		-webkit-transition: opacity .2s 0s, visibility 0s .2s;
 		-moz-transition: opacity .2s 0s, visibility 0s .2s;
 		transition: opacity .2s 0s, visibility 0s .2s;
+		background: $white;
+		color: $colour-1;
 
 		&::before {
 			/* right arrow */
@@ -202,15 +208,21 @@ body > header {
 			border-top-color: transparent;
 			border-bottom-color: transparent;
 			border-right-color: transparent;
+			border-left-color: $white;
 		}
 	}
 
-	.no-touch &:hover span {
-		opacity: 1;
-		visibility: visible;
-		-webkit-transition: opacity .2s 0s, visibility 0s 0s;
-		-moz-transition: opacity .2s 0s, visibility 0s 0s;
-		transition: opacity .2s 0s, visibility 0s 0s;
+	.no-touch &:hover {
+		color: $primary-colour;
+		background-color: #fff;
+
+		span {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transition: opacity .2s 0s, visibility 0s 0s;
+			-moz-transition: opacity .2s 0s, visibility 0s 0s;
+			transition: opacity .2s 0s, visibility 0s 0s;
+		}
 	}
 
 	@include MQ(M) {

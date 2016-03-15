@@ -246,23 +246,3 @@
 		background-color: rgba($white, 1);
 	}
 }
-
-.download {
-	/* download button top-right visible on big devices */
-	background-color: $colour-2;
-
-	.no-touch &:hover {
-		background-color: darken($colour-2, 10%);
-	}
-
-	span {
-		/* tooltip */
-		background: $white;
-		color: $colour-1;
-
-		&::before {
-			/* right arrow colour */
-			border-color: $white;
-		}
-	}
-}
