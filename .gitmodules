@@ -1,0 +1,3 @@
+[submodule "scss/ot-scss"]
+	path = scss/ot-scss
+	url = https://github.com/opentrials/ot-scss.git
