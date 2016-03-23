@@ -1,0 +1,137 @@
+.dropdown {
+  position: relative;
+
+  & > a {
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 3px 0 3px;
+      border-color: #fff transparent transparent transparent;
+      position: absolute;
+      top: 50%;
+      margin-left: 5px;
+    }
+  }
+
+  .dropdown-menu,
+  .user-menu {
+    @include transition (all 0.2s ease-in-out);
+    cursor: pointer;
+    display: none;
+    overflow: show;
+    position: absolute;
+    text-align: left;
+    z-index: 9;
+    background-color: $primary-colour;
+    padding-top: $base-spacing /2;
+    padding-bottom: $base-spacing /2;
+    box-sizing: border-box;
+    color: $white;
+
+    &.show-menu {
+      display: block;
+    }
+  }
+
+  .dropdown-menu {
+    top: 2em;
+
+    li {
+      display: block;
+      padding: 0;
+
+      @include MQ(M) {
+        white-space: nowrap;
+      }
+
+      a {
+        padding: $base-spacing /2 $base-spacing;
+        border-bottom: solid 1px lighten($primary-colour, 5%);
+        border-top: none;
+        display: block;
+      }
+    }
+  }
+
+}
+
+
+.main-nav {
+
+  a {
+  	text-decoration: none;
+  }
+
+	background: darken($colour-1, 4);
+
+	li a {
+    display: block;
+    padding: $base-spacing /2;
+    border-bottom-width: 1px;
+    border-style: solid;
+		border-color: $colour-1;
+    color: inherit;
+	}
+
+  li:first-of-type a {
+    border-top-width: 1px;
+  }
+
+	@include MQ(M) {
+    position: absolute;
+    width: auto;
+    background: transparent;
+    text-align: left;
+    top: 50%;
+    right: $base-spacing;
+
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: $base-spacing;
+
+      a {
+        display: inline-block;
+        padding: .4em .2em;
+        border-bottom: none;
+        @include transition(all .2s);
+
+  			.no-touch &:hover {
+  				color: $white;
+  			}
+      }
+
+      &.selected a,
+      a.selected {
+        background-color: $colour-5;
+      }
+
+      &:first-of-type a {
+        border-top: none;
+      }
+    }
+	}
+}
+
+.nav-trigger span {
+	/* hamburger menu */
+	background-color: $white;
+
+	&::before,
+	&::after {
+		/* upper and lower lines */
+		background-color: $white;
+	}
+}
+
+.nav-is-visible .nav-trigger span {
+	/* hide line in the center on mobile when nav is visible */
+	background-color: rgba($white, 0);
+
+	&::before, &::after {
+		/* preserve visibility of upper and lower lines - close icon */
+		background-color: rgba($white, 1);
+	}
+}

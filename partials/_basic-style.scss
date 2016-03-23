@@ -244,6 +244,7 @@ main {
 	> h1 {
 		text-align: center;
 		margin: 3em 0;
+		border: none;
 	}
 
 	@include MQ(M) {
