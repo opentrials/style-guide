@@ -812,19 +812,55 @@ section {
   background-size: contain;
   opacity: 0.5; }
 .icons .icon-1 {
-  background-image: url("../assets/icons/arrow_down.svg"); }
+  background-image: url("../assets/icons/arrow-down.svg"); }
 .icons .icon-2 {
-  background-image: url("../assets/icons/arrow_drop_down.svg"); }
+  background-image: url("../assets/icons/arrow-up.svg"); }
 .icons .icon-3 {
-  background-image: url("../assets/icons/checkmark.svg"); }
+  background-image: url("../assets/icons/behavioral.svg"); }
 .icons .icon-4 {
-  background-image: url("../assets/icons/filter.svg"); }
+  background-image: url("../assets/icons/calendar.svg"); }
 .icons .icon-5 {
-  background-image: url("../assets/icons/remove.svg"); }
+  background-image: url("../assets/icons/chevron-down.svg"); }
 .icons .icon-6 {
-  background-image: url("../assets/icons/upload.svg"); }
+  background-image: url("../assets/icons/close.svg"); }
 .icons .icon-7 {
-  background-image: url("../assets/icons/user.svg"); }
+  background-image: url("../assets/icons/creative-commons.svg"); }
+.icons .icon-8 {
+  background-image: url("../assets/icons/creative-commons-attribution.svg"); }
+.icons .icon-9 {
+  background-image: url("../assets/icons/delete.svg"); }
+.icons .icon-10 {
+  background-image: url("../assets/icons/eye.svg"); }
+.icons .icon-11 {
+  background-image: url("../assets/icons/eye-slash.svg"); }
+.icons .icon-12 {
+  background-image: url("../assets/icons/file.svg"); }
+.icons .icon-13 {
+  background-image: url("../assets/icons/flag.svg"); }
+.icons .icon-14 {
+  background-image: url("../assets/icons/log-out.svg"); }
+.icons .icon-15 {
+  background-image: url("../assets/icons/mail.svg"); }
+.icons .icon-16 {
+  background-image: url("../assets/icons/man-woman.svg"); }
+.icons .icon-17 {
+  background-image: url("../assets/icons/man.svg"); }
+.icons .icon-18 {
+  background-image: url("../assets/icons/woman.svg"); }
+.icons .icon-19 {
+  background-image: url("../assets/icons/messages.svg"); }
+.icons .icon-20 {
+  background-image: url("../assets/icons/more.svg"); }
+.icons .icon-21 {
+  background-image: url("../assets/icons/pil.svg"); }
+.icons .icon-22 {
+  background-image: url("../assets/icons/play.svg"); }
+.icons .icon-23 {
+  background-image: url("../assets/icons/procedure.svg"); }
+.icons .icon-24 {
+  background-image: url("../assets/icons/search.svg"); }
+.icons .icon-25 {
+  background-image: url("../assets/icons/twitter.svg"); }
 
 /* xForm section - basic style */
 .form input[type=text],
