@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .dropdown {
   position: relative; }
   .dropdown > a:after {
@@ -99,26 +100,26 @@
 
 @font-face {
   font-family: 'TeX Gyre Heros';
-  src: url("../fonts/texgyreheros/texgyreheros-regular-webfont.eot");
-  src: url("../fonts/texgyreheros/texgyreheros-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/texgyreheros/texgyreheros-regular-webfont.woff") format("woff"), url("../fonts/texgyreheros/texgyreheros-regular-webfont.ttf") format("truetype"), url("../fonts/texgyreheros/texgyreheros-regular-webfont.svg#texgyreherosregular") format("svg");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-regular-webfont.eot");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/texgyreheros/texgyreheros-regular-webfont.woff") format("woff"), url("../assets/fonts/texgyreheros/texgyreheros-regular-webfont.ttf") format("truetype"), url("../assets/fonts/texgyreheros/texgyreheros-regular-webfont.svg#texgyreherosregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'TeX Gyre Heros';
-  src: url("../fonts/texgyreheros/texgyreheros-italic-webfont.eot");
-  src: url("../fonts/texgyreheros/texgyreheros-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/texgyreheros/texgyreheros-italic-webfont.woff") format("woff"), url("../fonts/texgyreheros/texgyreheros-italic-webfont.ttf") format("truetype"), url("../fonts/texgyreheros/texgyreheros-italic-webfont.svg#texgyreherositalic") format("svg");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-italic-webfont.eot");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/texgyreheros/texgyreheros-italic-webfont.woff") format("woff"), url("../assets/fonts/texgyreheros/texgyreheros-italic-webfont.ttf") format("truetype"), url("../assets/fonts/texgyreheros/texgyreheros-italic-webfont.svg#texgyreherositalic") format("svg");
   font-weight: normal;
   font-style: italic; }
 @font-face {
   font-family: 'TeX Gyre Heros';
-  src: url("../fonts/texgyreheros/texgyreheros-bold-webfont.eot");
-  src: url("../fonts/texgyreheros/texgyreheros-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/texgyreheros/texgyreheros-bold-webfont.woff") format("woff"), url("../fonts/texgyreheros/texgyreheros-bold-webfont.ttf") format("truetype"), url("../fonts/texgyreheros/texgyreheros-bold-webfont.svg#texgyreherosbold") format("svg");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-bold-webfont.eot");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/texgyreheros/texgyreheros-bold-webfont.woff") format("woff"), url("../assets/fonts/texgyreheros/texgyreheros-bold-webfont.ttf") format("truetype"), url("../assets/fonts/texgyreheros/texgyreheros-bold-webfont.svg#texgyreherosbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'TeX Gyre Heros';
-  src: url("../fonts/texgyreheros/texgyreheros-bolditalic-webfont.eot");
-  src: url("../fonts/texgyreheros/texgyreheros-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/texgyreheros/texgyreheros-bolditalic-webfont.woff") format("woff"), url("../fonts/texgyreheros/texgyreheros-bolditalic-webfont.ttf") format("truetype"), url("../fonts/texgyreheros/texgyreheros-bolditalic-webfont.svg#texgyreherosbold_italic") format("svg");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-bolditalic-webfont.eot");
+  src: url("../assets/fonts/texgyreheros/texgyreheros-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/texgyreheros/texgyreheros-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/texgyreheros/texgyreheros-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/texgyreheros/texgyreheros-bolditalic-webfont.svg#texgyreherosbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 body {
@@ -215,6 +216,58 @@ picture {
     width: 0;
     height: 0;
     display: block; }
+
+.pagination::after {
+  clear: both;
+  content: "";
+  display: table; }
+.pagination li {
+  font-size: 14px;
+  border-radius: 2px;
+  display: inline-block; }
+  .pagination li span {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    height: 0;
+    display: inline-block;
+    width: 0; }
+.pagination a,
+.pagination button {
+  color: #3c3c3b;
+  display: block;
+  padding: 8px 12px 6px 12px; }
+  .pagination a:hover,
+  .pagination button:hover {
+    background: whitesmoke; }
+.pagination .current {
+  padding: 8px 12px 6px 12px;
+  background: #05b0e1;
+  color: white;
+  cursor: default;
+  font-weight: 600; }
+.pagination .disabled {
+  padding: 8px 12px 6px 12px;
+  color: #d0d0d0;
+  cursor: default; }
+  .pagination .disabled:hover {
+    background: transparent; }
+.pagination .ellipsis::after {
+  content: '…';
+  padding: 8px 12px 6px 12px;
+  color: #3c3c3b; }
+
+.pagination-previous a::before,
+.pagination-previous.disabled::before {
+  content: '«';
+  display: inline-block;
+  margin-right: 0.5rem; }
+
+.pagination-next a::after,
+.pagination-next.disabled::after {
+  content: '»';
+  display: inline-block;
+  margin-left: 0.5rem; }
 
 /* --------------------------------
 
