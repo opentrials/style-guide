@@ -25,7 +25,7 @@
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     box-sizing: border-box;
-    color: #ffffff; }
+    color: white; }
     .dropdown .dropdown-menu.show-menu,
     .dropdown .user-menu.show-menu {
       display: block; }
@@ -76,19 +76,19 @@
           -moz-transition: all 0.2s;
           transition: all 0.2s; }
           .no-touch .main-nav li a:hover {
-            color: #ffffff; }
+            color: white; }
         .main-nav li.selected a,
         .main-nav li a.selected {
-          background-color: #f5f5f5; }
+          background-color: whitesmoke; }
         .main-nav li:first-of-type a {
           border-top: none; } }
 
 .nav-trigger span {
   /* hamburger menu */
-  background-color: #ffffff; }
+  background-color: white; }
   .nav-trigger span::before, .nav-trigger span::after {
     /* upper and lower lines */
-    background-color: #ffffff; }
+    background-color: white; }
 
 .nav-is-visible .nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
@@ -168,10 +168,10 @@ a {
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #0484a9; }
+    color: #0384a8; }
 
 hr {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid whitesmoke;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -232,9 +232,9 @@ xPatterns
 -------------------------------- */
 .box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #f5f5f5;
+  border: 1px solid whitesmoke;
   border-radius: 3px;
-  background: #ffffff;
+  background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px; }
 
@@ -245,7 +245,7 @@ xNavigation
 -------------------------------- */
 body > header {
   background-color: #05b0e1;
-  color: #ffffff; }
+  color: white; }
   body > header .logo {
     width: 120px; }
     @media only screen and (min-width: 1024px) {
@@ -262,7 +262,7 @@ main > h1 {
   @media only screen and (min-width: 1600px) {
     main > h1 {
       /* title goes into the header on big devices */
-      color: #ffffff; } }
+      color: white; } }
 
 /* --------------------------------
 
@@ -463,7 +463,7 @@ body > header {
         padding: 0 2em;
         display: table; }
         body > header .main-nav li a.selected {
-          box-shadow: 0 3px 0 #ffffff;
+          box-shadow: 0 3px 0 white;
           background-color: transparent; } }
     @media only screen and (min-width: 1600px) {
       body > header .main-nav {
@@ -516,7 +516,7 @@ body > header {
     -webkit-transition: opacity .2s 0s, visibility 0s .2s;
     -moz-transition: opacity .2s 0s, visibility 0s .2s;
     transition: opacity .2s 0s, visibility 0s .2s;
-    background: #ffffff;
+    background: white;
     color: #3c3c3b; }
     .download span::before {
       /* right arrow */
@@ -531,7 +531,7 @@ body > header {
       border-top-color: transparent;
       border-bottom-color: transparent;
       border-right-color: transparent;
-      border-left-color: #ffffff; }
+      border-left-color: white; }
   .no-touch .download:hover {
     color: #05b0e1;
     background-color: #fff; }
@@ -702,7 +702,7 @@ section {
   .colors li:nth-of-type(4) .color-swatch::after {
     background: #cb3c10; }
 .colors li:nth-of-type(5) .color-swatch {
-  background: #f5f5f5; }
+  background: whitesmoke; }
   .colors li:nth-of-type(5) .color-swatch::before {
     background: white; }
   .colors li:nth-of-type(5) .color-swatch::after {
