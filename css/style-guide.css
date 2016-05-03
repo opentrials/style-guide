@@ -565,7 +565,7 @@ body > header {
     line-height: 40px;
     white-space: nowrap;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     -webkit-transition: opacity .2s 0s, visibility 0s .2s;
     -moz-transition: opacity .2s 0s, visibility 0s .2s;
     transition: opacity .2s 0s, visibility 0s .2s;
