@@ -22,9 +22,9 @@
     position: absolute;
     text-align: left;
     z-index: 9;
-    background-color: #05b0e1;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    background-color: #0095c4;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
     box-sizing: border-box;
     color: white; }
     .dropdown .dropdown-menu.show-menu,
@@ -39,8 +39,8 @@
         .dropdown .dropdown-menu li {
           white-space: nowrap; } }
       .dropdown .dropdown-menu li a {
-        padding: 0.75em 1.5em;
-        border-bottom: solid 1px #06c3f9;
+        padding: 0.8em 1.6em;
+        border-bottom: solid 1px #00a8de;
         border-top: none;
         display: block; }
 
@@ -50,7 +50,7 @@
     text-decoration: none; }
   .main-nav li a {
     display: block;
-    padding: 0.75em;
+    padding: 0.8em;
     border-bottom-width: 1px;
     border-style: solid;
     border-color: #3c3c3b;
@@ -64,11 +64,11 @@
       background: transparent;
       text-align: left;
       top: 50%;
-      right: 1.5em; }
+      right: 1.6em; }
       .main-nav li {
         display: table-cell;
         vertical-align: middle;
-        padding-left: 1.5em; }
+        padding-left: 1.6em; }
         .main-nav li a {
           display: inline-block;
           padding: .4em .2em;
@@ -165,11 +165,12 @@ p {
   margin: 0 0 0.8em; }
 
 a {
-  color: #05b0e1;
+  color: #0095c4;
   text-decoration: none;
-  transition: color 150ms ease; }
+  transition: color 150ms ease;
+  font-weight: bold; }
   a:active, a:focus, a:hover {
-    color: #0384a8; }
+    color: #006f93; }
 
 hr {
   border-bottom: 1px solid whitesmoke;
@@ -193,7 +194,7 @@ picture {
     position: absolute;
     bottom: -0.1em;
     left: 0;
-    color: #05b0e1;
+    color: #0095c4;
     font-size: 1.3em;
     cursor: default; }
   .stars:before {
@@ -242,7 +243,7 @@ picture {
     background: whitesmoke; }
 .pagination .current {
   padding: 8px 12px 6px 12px;
-  background: #05b0e1;
+  background: #0095c4;
   color: white;
   cursor: default;
   font-weight: 600; }
@@ -297,7 +298,7 @@ xNavigation
 
 -------------------------------- */
 body > header {
-  background-color: #05b0e1;
+  background-color: #0095c4;
   color: white; }
   body > header .logo {
     width: 120px; }
@@ -344,7 +345,7 @@ section > h2 {
   text-transform: uppercase; }
   section > h2::before {
     /* number before each section title */
-    color: #cfcfcf; }
+    color: #3c3c3b; }
 
 /* --------------------------------
 
@@ -353,7 +354,7 @@ xButtons
 -------------------------------- */
 .buttons .box:nth-of-type(2) span {
   /* CSS class name colour */
-  color: #05b0e1; }
+  color: #0095c4; }
 
 /* --------------------------------
 
@@ -586,7 +587,7 @@ body > header {
       border-right-color: transparent;
       border-left-color: white; }
   .no-touch .download:hover {
-    color: #05b0e1;
+    color: #0095c4;
     background-color: #fff; }
     .no-touch .download:hover span {
       opacity: 1;
@@ -737,29 +738,29 @@ section {
   .colors li:nth-of-type(1) .color-swatch::after {
     background: #2f2f2e; }
 .colors li:nth-of-type(2) .color-swatch {
-  background: #05b0e1; }
+  background: #0095c4; }
   .colors li:nth-of-type(2) .color-swatch::before {
-    background: #06c3f9; }
+    background: #00a8de; }
   .colors li:nth-of-type(2) .color-swatch::after {
-    background: #049cc8; }
+    background: #0082ab; }
 .colors li:nth-of-type(3) .color-swatch {
-  background: #10ca83; }
+  background: #006b8a; }
   .colors li:nth-of-type(3) .color-swatch::before {
-    background: #12e292; }
+    background: #007fa4; }
   .colors li:nth-of-type(3) .color-swatch::after {
-    background: #0eb274; }
+    background: #005771; }
 .colors li:nth-of-type(4) .color-swatch {
-  background: #e34312; }
+  background: #10ca83; }
   .colors li:nth-of-type(4) .color-swatch::before {
-    background: #ed5121; }
+    background: #12e292; }
   .colors li:nth-of-type(4) .color-swatch::after {
-    background: #cb3c10; }
+    background: #0eb274; }
 .colors li:nth-of-type(5) .color-swatch {
-  background: whitesmoke; }
+  background: #e34312; }
   .colors li:nth-of-type(5) .color-swatch::before {
-    background: white; }
+    background: #ed5121; }
   .colors li:nth-of-type(5) .color-swatch::after {
-    background: #e8e8e8; }
+    background: #cb3c10; }
 @media only screen and (min-width: 768px) {
   .colors li {
     width: 19%;
@@ -788,7 +789,7 @@ section {
 /* xTypography section - basic style */
 .typography h1::before {
   content: 'Aa - ';
-  color: #05b0e1; }
+  color: #0095c4; }
 
 .buttons .box:first-of-type {
   border-bottom-left-radius: 0;
