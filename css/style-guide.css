@@ -861,6 +861,10 @@ section {
   background-image: url("../assets/icons/search.svg"); }
 .icons .icon-25 {
   background-image: url("../assets/icons/twitter.svg"); }
+.icons .icon-26 {
+  background-image: url("../assets/icons/treatment.svg"); }
+.icons .icon-27 {
+  background-image: url("../assets/icons/link.svg"); }
 
 /* xForm section - basic style */
 .form input[type=text],
